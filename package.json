@@ -21,6 +21,7 @@
     "watch": "^0.16.0"
   },
   "scripts": {
+    "cli": "babel test/fixtures/basic/actual.js",
     "release": "babel src --out-dir dist",
     "test": "node test",
     "watch": "node test --watch",
