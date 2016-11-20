@@ -1,6 +1,8 @@
-import 'better-log/install';
+// import 'better-log/install';
 
-module.exports = function ({ types: t }) {
+module.exports = function (
+	// { types: t }
+	) {
 	return {
 		visitor: {
 		    BooleanLiteral(node) {
