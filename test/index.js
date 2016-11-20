@@ -24,9 +24,7 @@ function runTests() {
 }
 
 function runTest(dir) {
-	var output = babel.transformFileSync(dir.path + '/actual.js', {
-		plugins: [pluginPath]
-	});
+	var output = babel.transformFileSync(dir.path + '/actual.js');
 
 	var expected = fs.readFileSync(dir.path + '/expected.js', 'utf-8');
 

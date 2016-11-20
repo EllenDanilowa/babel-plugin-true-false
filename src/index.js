@@ -1,9 +1,6 @@
-// import 'better-log/install';
-
-module.exports = function (
-	// { types: t }
-	) {
+module.exports = function () {
 	return {
+		name: "true-false", 
 		visitor: {
 		    BooleanLiteral(node) {
 				if(node.node.value !== undefined){
